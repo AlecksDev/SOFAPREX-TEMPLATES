@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Solicitud de Exámenes Médicos</title>
+  <!-- Agregar enlaces a los estilos de Bootstrap y personalización con el color fucsia -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Personalización del color fucsia */
+    body {
+      background-color: magenta;
+    }
+
+    /* Personalización del encabezado y pie de página */
+    .header {
+      background-color: magenta;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .footer {
+      background-color:  magenta;
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <div class="header">
+    <h1>Solicitud de Exámenes Médicos</h1>
+  </div>
+
+  <!-- Contenido principal -->
+  <div class="container mt-4">
+    <form>
+      <div class="form-group">
+        <label for="nombre">Nombre:</label>
+        <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+      </div>
+      <div class="form-group">
+        <label for="edad">Edad:</label>
+        <input type="number" class="form-control" id="edad" placeholder="Ingrese su edad">
+      </div>
+      <!-- Agregar más campos según sea necesario -->
+
+      <button type="submit" class="btn btn-primary">Enviar Solicitud</button>
+    </form>
+  </div>
+
+  <!-- Pie de página -->
+  <div class="footer fixed-bottom">
+    <p>&copy; 2024 Solicitud de Exámenes Médicos</p>
+  </div>
+
+  <!-- Scripts de Bootstrap y jQuery (asegúrate de incluir jQuery antes de Bootstrap) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
