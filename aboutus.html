@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOFAPREX</title>
+    <!-- Template Main CSS File -->
+    <link href="assets/style.css" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+    <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS from CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <!-- Bootstrap JS from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+      <div class="d-flex align-items-center justify-content-between">
+          <!-- Logo -->
+          <a href="base.html" class="logo d-flex align-items-center">
+              <span class="d-none d-lg-block">SOFAPREX</span>
+          </a>
+      </div>
+
+      <!-- Navigation -->
+      <nav class="header-nav ms-auto">
+          <ul class="d-flex align-items-center">
+              <!-- Profile Dropdown -->
+              <li class="nav-item dropdown pe-3">
+                  <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+                      <span class="d-none d-md-block dropdown-toggle ps-2">J. Doe</span>
+                  </a>
+
+                  <!-- Profile Dropdown Items -->
+                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+                      <li class="dropdown-header">
+                          <h6>Jhon Doe</h6>
+                          <span>Bioanalista</span>
+                      </li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li>
+                          <a class="dropdown-item d-flex align-items-center" href="#">
+                              <i class="bi bi-person"></i>
+                              <span>Perfil</span>
+                          </a>
+                      </li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li>
+                          <a class="dropdown-item d-flex align-items-center" href="#">
+                              <i class="bi bi-gear"></i>
+                              <span>Ajustes</span>
+                          </a>
+                      </li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li>
+                          <a class="dropdown-item d-flex align-items-center" href="#">
+                              <i class="bi bi-question-circle"></i>
+                              <span>Ayuda</span>
+                          </a>
+                      </li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li>
+                          <a class="dropdown-item d-flex align-items-center" href="#">
+                              <i class="bi bi-box-arrow-right"></i>
+                              <span>Cerrar sesión</span>
+                          </a>
+                      </li>
+                  </ul><!-- End Profile Dropdown Items -->
+              </li><!-- End Profile Nav -->
+          </ul>
+      </nav><!-- End Icons Navigation -->
+  </header><!-- End Header -->
+  <div class="container-fluid" style="margin-top: 70px;">
+    <div class="row">
+        <!-- Sidebar -->
+        <nav class="col-md-3 col-lg-2 d-block sidebar">
+            <ul class="sidebar-nav flex-column">
+                <li class="nav-item"><a class="nav-link" href="{% url 'sistema' %}">Sistema</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'lista_persona' %}">Personas</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'lista_empresa' %}">Empresas</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'lista_perfil' %}">Perfiles de Exámenes</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'lista_seccion' %}">Secciones de Exámenes</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'lista_metodo' %}">Métodos de Pago</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'logout' %}">Cerrar sesión</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 content" role="main">
+            <header class="py-4" style="border-bottom: 1px solid black;">
+                <div class="container text-center">
+                  <h1>Sobre Nosotros</h1>
+                </div>
+              </header>
+           <section id="resena-historica">
+                <h2 class="mt-5">Reseña Histórica</h2>
+                <p>En el corazón de Acarigua-Araure, un grupo visionario de empresarios y médicos se unió con una misión común: establecer un centro médico que sobrepasara los estándares de atención y tecnología en la región. Así nació la idea del Hospital Privado de Occidente, con la determinación de llenar un vacío crucial en el cuidado de la salud en los Estados Portuguesa, Lara, Trujillo, Barinas, Cojedes y Apure.</p>
+                <p>En diciembre de 1995, este sueño comenzó a tomar forma con la adquisición del terreno donde hoy se erige nuestra institución, ubicada estratégicamente en Av. Vencedores de Araure, sector Los Malabares, Araure, Edo. Portuguesa. La construcción de este hospital representó no solo una inversión económica, sino también un compromiso con la salud y el bienestar de nuestra comunidad, generando empleos directos e indirectos que han fortalecido el tejido social de la región.</p>
+                <p>El 15 de agosto de 2007, el Hospital de Occidente C.A abrió sus puertas al público, reflejando nuestra visión de ser un referente en servicios de salud para todos. Desde entonces, hemos trabajado incansablemente para brindar atención humana y tecnológica de excelencia, marcando así una diferencia significativa en el panorama médico de la región.</p>            
+            </section>
+
+            <section id="objetivos-estrategicos" class="mt-5">
+                <h2>Objetivos Estratégicos</h2>
+                <p>En el Laboratorio Hospital Privado, nos comprometemos a liderar el avance científico y tecnológico en el campo de la medicina y la salud. Nuestros objetivos estratégicos son:</p>
+                <ul>
+                    <li>Realizar investigaciones científicas y tecnológicas para mejorar el conocimiento médico y los tratamientos.</li>
+                    <li>Promover la formación y capacitación del personal médico a través de programas continuos de educación.</li>
+                    <li>Contribuir al desarrollo de nuevos métodos y técnicas de diagnóstico en colaboración con otros laboratorios e instituciones.</li>
+                    <li>Mejorar la calidad y precisión de los resultados de las pruebas y análisis mediante rigurosos controles de calidad.</li>
+                    <li>Colaborar estrechamente con otros profesionales de la salud para proporcionar un enfoque integral en el diagnóstico y tratamiento de los pacientes.</li>
+                </ul>
+                <p>Estos objetivos están arraigados en nuestro compromiso con la excelencia y la innovación, y guían cada paso que damos en nuestro camino hacia un futuro más saludable y prometedor.</p>
+            </section>
+        </main>
+    </div>
+</div>
+
+ <!-- Main Content -->
+       
+ <!--Footer-->   
+ <footer class="footer fixed-bottom py-3" style="background-color: white;">
+    <div class="container text-center">
+      <p>&copy; 2024 Laboratorio Hospital Privado</p>
+    </div>
+  </footer>
+</body>
+</html>
